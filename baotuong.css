@@ -1,0 +1,492 @@
+.body {
+    background-image: url("image/background4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Raleway;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 200px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container h2 {
+    font-family: Montserrat;
+    font-size: 26px;
+}
+
+.bottom-line {
+    border-style: solid;
+    background-color: black;
+    opacity: 0.1;
+}
+
+/*header*/
+
+    .header {
+        color: black;
+        font-family: 'Bitter';
+    }
+
+    .header h1 {
+        font-size: 40px; 
+        margin-top: 0px;
+    }
+
+    .header-title {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .title1 {
+        text-align: right;
+        margin-right: -192px;
+        margin-bottom: 0px;
+    }
+
+    .title2 {
+        text-align: left;
+        margin-left: -158px;
+        margin-top: 0px;
+    }
+
+    .header p {
+        font-size: 20px; 
+        margin-top: -10px; 
+        margin-bottom: -10px;
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+
+/*navigation*/
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 74px;
+}
+
+.box-menu{
+    background-color: #b6d4db;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    border-radius: 10px;
+    transition: all 100ms;
+    display: flex;
+    flex-direction: row;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    z-index: 1;
+}
+
+.logo1{
+    height: 70px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 70px;
+    margin-right: -20px;
+    margin-top: 0px;
+    mix-blend-mode: multiply;
+}
+
+.list {
+    position:relative;
+    left: 80px;
+}
+
+.box-menu.hidden{
+    opacity: 0.3;
+}
+
+.box-menu.background-nav {
+    background-color: #b6d4db;
+    opacity: 0.3;
+    border-radius: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+}
+
+.box-menu:hover{
+    opacity: 1;
+}
+.box-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color:#ffffff
+}
+
+.box-menu ul li{
+    width: 145px;
+    margin: 5px;
+    padding: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.box-menu ul li a{
+    color: #081c46;
+    text-decoration: none;
+}
+
+.active,.box-menu ul li:hover{
+    background: #595b661c;
+    border-radius: 10px;
+}
+
+.box-menu fa{
+    margin-right: 5px;
+}
+
+.box-submenu{
+    display: none;
+}
+
+.box-menu ul li:hover .box-submenu{
+    display: block;
+    position: absolute;
+    background: #a6bfc5;
+    margin-top: 7px;
+    margin-left: -15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.box-menu ul li:hover .box-submenu ul{
+    display:block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box-menu ul li:hover .box-submenu ul li{
+    width: 220px;
+    text-align: left;
+    border-bottom: dotted 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    padding: 15px;
+    margin: 10px;
+}
+
+.box-menu ul li:hover .box-submenu ul li:last-child{
+    border-bottom: none;
+}
+
+/*main*/
+
+    /*Giới thiệu*/
+
+        .gioithieu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap:0px ;
+        }
+
+        .gioithieu-content1 {
+            text-align: justify;
+            border: 2px solid rgba(33, 55, 102, 0);
+            border-radius: 10px;
+            margin-left: 40px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+
+        .gioithieu-content1 p {
+            margin-top: 0px;
+        }
+
+        .gioithieu-content2 {
+            text-align: justify;
+            border: 2px solid rgba(33, 55, 102, 0);
+            border-radius: 10px;
+            margin-right: 40px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+
+        .gioithieu p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .trailer {
+            width: 350px;
+            border-radius: 10px;
+            margin-left: 26.2735px;
+            margin-bottom: 5px;
+        }
+
+        .gioithieu-content2 figcaption {
+            font-size: 16px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+    /*Tóm tắt*/
+
+        .tomtat {
+            display: grid;
+            grid-template-columns: 0.3fr 0.7fr;
+        }
+
+        .tomtat-image1 {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .tomtat-content {
+            text-align: justify;
+            padding-right: 20px;
+        }
+
+    /*Các nhân vật*/
+
+        .character {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .character1 {
+            border: 2px solid rgba(33, 55, 102, 0.404);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .character-image {
+            width: 268px;
+            border-radius: 10px;
+        }
+
+        .character1 figcaption {
+            font-size: 16px;
+            font-style: italic;
+            margin-top: 2px;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+
+        .character-content {
+            font-size: 17px;
+            text-align: left;
+            margin-top: 2px;
+        }
+
+    /*Thông điệp*/
+    
+        .thongdiep1 {
+            display: grid;
+            grid-template-columns: 1fr 0.8fr 0.2fr;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .thongdiep-title {
+            margin-top: 0px;
+            font-size: 20px;
+        }
+
+        .thongdiep-image {
+            width: 268px;
+            border-radius: 10px;
+        }
+
+        .thongdiep2 {
+            display: grid;
+            grid-template-columns: 0.2fr 0.8fr 1fr;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .thongdiep figcaption {
+            display: block;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    /*Yếu tố đặc sắc*/
+
+        .yeutodacsac {
+            text-align: justify;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        .musicground {
+            text-align: center;
+        }
+
+        .music {
+            width: 500px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .yeutodacsac-image {
+            text-align: center;
+            font-size: 16px;
+            font-weight:bold;
+        }
+
+        .yeutodacsac-image1 {
+            width: 500px;
+            border-radius: 10px;
+        }
+        .yeutodacsac figcaption {
+            display: block;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .music figcaption {
+            display: block;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    /*Giải thưởng*/
+        
+        .giaithuong {
+            display: grid;
+            grid-template-columns: 0.3fr 0.7fr;
+        }
+
+        .giaithuong-image1 {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .giaithuong-content {
+            text-align: justify;
+            padding-right: 20px;
+        }
+
+        .giaithuong-content p {
+            margin-top: 0px;
+        }
+
+        li {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .giaithuong figcaption {
+            display: block;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+    /*Tổng kết và Góc bình luận*/
+
+        .tongketbinhluan {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+        }
+
+        /*Tổng kết*/
+
+            .tongket {
+                border: 2px solid rgba(33, 55, 102, 0.404);
+                border-radius: 10px;
+                padding-left: 20px;
+                padding-right: 0px;
+                margin: 10px
+            }
+
+            .tongket-content {
+                text-align: justify;
+                padding-right: 20px;
+            }
+
+        /*Góc bình luận*/        
+
+            .binhluan {
+                border: 2px solid rgba(33, 55, 102, 0.404);
+                border-radius: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin: 10px
+            }
+
+            .binhluan p {
+                font-family: Raleway;
+                margin-bottom: 5px;
+            }
+
+            .input {
+                padding: 5px;
+                border-radius: 10px;
+                border-style: solid;
+            }
+
+            textarea {
+                font-family: Raleway;
+                width: 380px;
+                height: 100px;
+                resize: none;
+                border-style: solid;
+                border-width: 2px;
+            }
+            .button {
+                display: block;
+                border-radius: 10px;
+                border-style: solid;
+                position: relative;
+                left: 70%;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+
+            .button:hover {
+                background-color: #b6d4db;
+            }
+
+            .button:active {
+                background-color: #a6bfc5;
+            }
+
+            .binhluan-content {
+                font-family: Raleway;
+                text-align: left;
+            }
+
+/*footer*/
+
+    .footer {
+        text-align: left;
+        background-image: url("image/background.png");
+        background-position: top;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: black;
+    }
+
+    .source {
+        color: black;
+    }
+
+    .source:hover {
+        color: rgb(75, 75, 75);
+    }
+
+    .source:active {
+        color: rgb(131, 131, 131);
+    }

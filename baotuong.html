@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howl's Moving Castle</title>
+    <link rel="icon" href="image/calcifer2.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="baotuong.css">
+</head>
+<body class="body">
+    <div class="container">  
+        <!--Header-->
+        <div class="header">
+            <header>
+                <img
+                style="margin-bottom: 10px; margin-top: 30px; margin-bottom: 5px;"
+                alt="MovieLogo" 
+                src="image/Movie_Logo.webp"
+                >
+                <div class="header-title">
+                    <div>
+                        <h1 class="title1">
+                            Câu chuyện về tình yêu
+                        </h1>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <h1 class="title2">
+                            và sự tự trưởng thành.
+                        </h1>
+                    </div>
+                </div>
+                <p>
+                        <i>A heart's a heavy burden.</i>
+                </p>
+            </header>
+        </div>
+        <hr class="bottom-line">
+        <!--Navigation-->
+            <div class="box-menu" id="box-menu">
+                <div>
+                    <img 
+                    class="logo1"
+                    src="image/logo1.jpg"
+                    >
+                </div>
+                <ul class="list">
+                    <li><strong><a href="#0"><i class="fa fa-film" aria-hidden="true"></i> Giới thiệu</a></strong></li>
+                    <li><strong><a><i class="fa fa-server" aria-hidden="true"></i> Mục lục</a></strong>
+                        <div class="box-submenu">
+                            <ul>
+                                <li><strong><a href="#1">I. Tóm tắt phim</a></strong></li>
+                                <li><strong><a href="#2">II. Các nhân vật chính</a></strong></li>
+                                <li><strong><a href="#3">III. Thông điệp</a></strong></li>
+                                <li><strong><a href="#4">IV. Yếu tố đặc sắc</a></strong></li>
+                                <li><strong><a href="#5">V. Một số giải thưởng</a></strong></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><strong><a href="#6"><i class="fa fa-paper-plane" aria-hidden="true"></i> Tổng kết</a></strong></li>                         
+                    <li><strong><a href="#6"><i class="fa fa-comments-o" aria-hidden="true"></i> Góc bình luận</a></strong></li>
+                </ul>
+                <script>
+                    window.addEventListener("scroll" , () => {
+                        const boxMenu = document.getElementById("box-menu");
+                        if (window.scrollY >= 510) {
+                            boxMenu.classList.add("hidden");
+                            boxMenu.classList.add("background-nav");
+                        } else {
+                            boxMenu.classList.remove("hidden");
+                            boxMenu.classList.remove("background-nav");
+                        }
+                    });
+                </script>   
+            </div>
+        <hr class="bottom-line"  id="0">
+        <!--Main-->
+        <main>
+            <!--Giới thiệu phim-->
+            <section>
+                <h2>
+                    Giới thiệu
+                </h2>
+                <div class="gioithieu">
+                    <div class="gioithieu-content1">
+                        <p>
+                            Có những ngày, bạn cảm thấy mình bé nhỏ giữa thế giới rộng lớn này? Có những lúc, bạn tự hỏi, liệu mình có đủ dũng khí để đối mặt với thử thách, để tìm thấy giá trị đích thực của bản thân? Nếu những câu hỏi ấy vẫn luôn ẩn khuất trong tâm trí bạn, có lẽ một cuộc phiêu lưu là điều bạn cần.
+                            <br>
+                            <br>
+                            Hãy cùng tạm gác lại những bộn bề thường nhật, những hoài nghi đang bủa vây, và đắm mình vào thế giới kỳ diệu của "Lâu Đài Bay của Howl". Tại đây, bạn sẽ gặp gỡ những nhân vật đặc biệt, chứng kiến những điều kỳ lạ, và cùng họ trải qua một hành trình đầy cảm xúc.
+                        </p>
+                    </div>
+                    <div class="gioithieu-content2">
+                        <video class="trailer" controls>
+                            <source src="trailer.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Trailer Howl's Moving Castle</figcaption>
+                        <p>
+                            Liệu rằng thế giới ấy có thể mang đến sự thấu hiểu cho những trăn trở của bạn? Liệu bạn có khám phá ra sức mạnh tiềm ẩn bên trong mình? Hãy cùng "Lâu Đài Bay của Howl" bắt đầu cuộc phiêu lưu của riêng bạn nhé!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <hr class="bottom-line"  id="1">
+            <!--Tóm tắt phim-->
+            <section>
+                <h2>
+                    I. Tóm tắt phim
+                </h2>
+                <div class="tomtat">
+                    <div class="tomtat-image">
+                        <img
+                        class="tomtat-image1"
+                        alt="Howl's Moving Castle"
+                        src="image/tomtat.jpg"
+                        >
+                    </div>
+                    <div class="tomtat-content">
+                        <p>
+                            Howl's Moving Castle được chuyển thể từ câu chuyện của nhà văn người Anh Diana Wynne Jones. Do đó, tác phẩm này lấy bối cảnh và đậm vị của châu Âu dù được sản xuất bởi Ghibli Studio tại Nhật Bản. Câu chuyện kể về Sophie, một cô gái 18 tuổi dính lời nguyền trở thành một bà lão, và hành trình của cô nhằm hoá giải lời nguyền độc ác đó và tìm kiếm hạnh phúc thực sự của đời mình. Cùng với Sophie, Howl là một gã pháp sư điển trai và hào hoa, hay đi đánh cắp trái tim của những cô gái xinh đẹp xung quanh mình. Howl's Moving Castle đã rất tài tình trong việc lật mở từng góc khuất của nhân vật Howl sau sự xuất hiện đầy hào nhoáng và lấp lánh. Không khó để nhận ra những điểm "không hoàn hảo" của Howl, những vết thương hay nỗi sợ mà anh đã phải chạy trốn. Cùng với Sophie, khán giả dần hiểu và thông cảm cho những gì Howl đã phải đối mặt, đồng thời trở nên yêu mến nhân vật này một cách vô cùng tự nhiên và nhẹ nhàng.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <hr class="bottom-line"  id="2">
+            <!--Các nhân vật-->
+            <section>
+                <h2>
+                    II. Các nhân vật chính
+                </h2>
+                <div class="character">
+                    <div class="character1">
+                        <img
+                        class="character-image"
+                        alt="Sophie Hatter"
+                        src="image/sophie.jpg"
+                        >
+                        <figcaption>Sophie Hatter</figcaption>
+                        <p></p>
+                        <p class="character-content">
+                            Con gái cả nhà Hatter. Rất có trách nhiệm, đầy tinh thần hy sinh nhưng hay e dè, thiếu tự tin. Bị vướng phải lời nguyền của mụ phù thủy xứ Wales mà biến thành một bà lão.
+                        </p>
+                    </div>
+                    <div class="character1">
+                        <img
+                        class="character-image"
+                        alt="Howl"
+                        src="image/howl.jpg"
+                        >
+                        <figcaption>Howl</figcaption>
+                        <p></p>
+                        <p class="character-content">
+                            Tên thật là Howell Jenkins, nhưng sử dụng tên "Howl Jenkins" ở Porthaven và ưa thích dùng tên "Howl Pendragon" ở Kingsbury. Tính tình nổi tiếng hống hách và độc ác nhưng thực chất rất thông minh, có phần ương bướng.
+                        </p>
+                    </div>
+                    <div class="character1">
+                        <img
+                        class="character-image"
+                        alt="Calcifer"
+                        src="image/calcifer.jpg"
+                        >
+                        <figcaption>Calcifer</figcaption>
+                        <p></p>
+                        <p class="character-content" style="text-align: center;">
+                            Ma lửa sống trong lâu đài của Howl.
+                        </p>
+                    </div>
+                    <div class="character1">
+                        <img
+                        class="character-image"
+                        alt="Witch of the Waste"
+                        src="image/witch.jpg"
+                        >
+                        <figcaption>Phù thủy xứ Waste</figcaption>
+                        <p></p>
+                        <p class="character-content" style="text-align: center;">
+                            Người đã trù ếm Sophie thành bà già.
+                        </p>
+                    </div>
+                    <div class="character1">
+                        <img
+                        class="character-image"
+                        alt="Madame Suliman"
+                        src="image/madame.jpg"
+                        >
+                        <figcaption>Madame Suliman</figcaption>
+                        <p></p>
+                        <p class="character-content">
+                            Madame Suliman là nhân vật phản diện chính trong bộ phim chuyển thể Lâu đài di động của Howl. Bà là sự kết hợp giữa bà Pentstemmon và phù thủy Sulliman trong truyện.
+                    </div>
+                    <div class="character1">
+                        <img
+                        class="character-image"
+                        alt="Đầu củ cải"
+                        src="image/daucucai.jpg"
+                        >
+                        <figcaption>Đầu củ cải</figcaption>
+                        <p></p>
+                        <p class="character-content">
+                            Được biết đến trong tiểu thuyết gốc là Hoàng tử Justin , là một nhân vật trong phim Lâu đài bay của Howl . Anh ta đi theo Sophie sau khi cô cứu anh ta trên đường đến vùng đất hoang.
+                    </div>
+                </div>
+            </section>
+            <hr class="bottom-line"  id="3">
+            <!--Thông điệp-->
+            <section class="thongdiep">
+                <h2>
+                    III. Thông điệp
+                </h2>
+                <div class="thongdiep1">
+                    <div>
+                        <img
+                        class="thongdiep-image"
+                        alt="Sophie luôn cảm thấy tự ti"
+                        src="image/thongdiep1.jpg"
+                        >
+                        <figcaption>
+                            Sophie luôn cảm thấy tự ti
+                        </figcaption>
+                    </div>
+                    <div style="text-align: left;">
+                        <h3 class="thongdiep-title">
+                            Tình yêu và sự tự chấp nhận bản thân
+                        </h3>
+                        <p style="text-align: justify;">
+                            Sophie, từ một cô gái trẻ nhút nhát, bị biến thành bà lão do lời nguyền. Hình dạng già nua này phản ánh sự tự ti và những rào cản tâm lý cô tự đặt ra cho mình. Trong hành trình tìm cách hóa giải lời nguyền, Sophie dần khám phá sức mạnh nội tại và học cách yêu thương bản thân. Khi cô chấp nhận chính mình và mở lòng với tình yêu, lời nguyền dần được phá bỏ. Điều này cho thấy sự tự tin và tình yêu bản thân là chìa khóa để vượt qua những giới hạn do chính mình đặt ra.
+                        </p>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="thongdiep2">
+                    <div>
+
+                    </div>   
+                    <div style="text-align: left;">
+                        <h3 class="thongdiep-title">
+                            Phản đối chiến tranh
+                        </h3>
+                        <p style="text-align: justify;">
+                            Bộ phim lên án mạnh mẽ sự tàn khốc và vô nghĩa của chiến tranh. Đạo diễn Hayao Miyazaki, với quan điểm phản chiến rõ ràng, đã thể hiện điều này qua những cảnh thành phố bị tàn phá và cuộc sống bị đảo lộn. Nhân vật Howl, một pháp sư mạnh mẽ nhưng chán ghét bạo lực, chọn cách trốn tránh cuộc chiến phi nghĩa, thể hiện khát vọng hòa bình và tự do.
+                        </p>
+                    </div>
+                    <div>
+                        <img
+                        class="thongdiep-image"
+                        alt="Lâu đài di động biểu trưng cho sự tự do"
+                        src="image/thongdiep2.png"
+                        >
+                        <figcaption>
+                            Lâu đài di động biểu trưng cho sự tự do
+                        </figcaption>
+                    </div>
+                </div>
+            </section>
+            <hr class="bottom-line"  id="4">
+            <!--Yếu tố đặc sắc-->
+            <secion>
+                <h2>
+                    IV. Yếu tố đặc sắc
+                </h2>
+                <div class="yeutodacsac">
+                    <p>
+                        Trong bối cảnh mê hoặc của thế giới phép thuật, Howl's Moving Castle dẫn dắt khán giả vào giấc mơ tuyệt diệu, nơi âm nhạc du dương hòa quyện với những khung hình được tạo tác từ kỹ thuật vẽ tay truyền thống. Âm nhạc của Joe Hisaishi như dòng chảy cảm xúc, thổi hồn vào từng khoảnh khắc và khơi dậy những rung động sâu sắc trong lòng người xem. Vì vậy, không phải tự dưng mà Merry Go Round Of Life trở thành một trong những bản nhạc phim điển nhất của nhà Ghibli.
+                    </p>
+                    <div class="musicground">
+                        <video class="music" controls>
+                            <source src="music.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Âm thanh du dương của bản nhạc Merry Go Round Of Life</figcaption>
+                    </div>
+                    <p>
+                        Tuy nhiên, giữa vẻ huyền bí ấy, ta vẫn chạm trán với những cơn ác mộng ghê rợn, làm cho giấc mơ thêm phần đa chiều. Hình ảnh trong phim khắc họa sự tương phản giữa vẻ đẹp tráng lệ của thiên nhiên và sự tàn phá do chiến tranh. Những khung cảnh lãng mạn, từ cánh đồng xanh mướt đến lâu đài hùng vĩ, đối lập với cảnh chiến tranh khốc liệt, nhấn mạnh lần nữa thông điệp về hòa bình và gìn giữ vẻ đẹp của cuộc sống trong một thế giới đầy biến động.
+                    </p>
+                    <p>
+                        Bộ phim kết hợp hài hòa giữa phong cách hoạt hình truyền thống và công nghệ CGI tiên tiến, tạo nên một thế giới hình ảnh sống động và đầy màu sắc. Những lâu đài di động kỳ lạ, những thành phố cổ kính, những khung cảnh thiên nhiên hùng vĩ,... tất cả được thiết kế tỉ mỉ và chi tiết, tạo nên một thế giới kỳ ảo và lôi cuốn.
+                    </p>
+                    <div class="yeutodacsac-image">
+                        <img 
+                        src="image/background1.jpg" 
+                        alt="Phong cảnh trong phim" 
+                        class="yeutodacsac-image1">
+                        <figcaption>Bức tranh ma thuật đầy rung cảm</figcaption>
+                    </div>
+                </div>
+            </secion>
+            <hr class="bottom-line" id="5">
+            <!--Giải thưởng-->
+            <section>
+                <h2>
+                    V. Một số giải thưởng
+                </h2>
+                <div class="giaithuong">
+                    <div class="giaithuong-image">  
+                        <img
+                        class="giaithuong-image1"
+                        alt="Đạo diễn Hayao Miyazaki"
+                        src="image/hayao.jpg"
+                        >
+                        <figcaption>Đạo diễn Hayao Miyazaki</figcaption>
+                    </div>
+                    <div class="giaithuong-content">
+                        <p>
+                            Với sự góp mặt của đạo diễn Hayao Miyazaki, Howl's Moving Castle đã nhận được nhiều giải thưởng quốc tế danh giá. Dưới đây là một số giải thưởng nổi bật mà bộ phim đã đạt được:
+                        </p>
+                        <ul>
+                            <li>
+                                Giải Liên hoan phim quốc tế Venezia lần thứ 61  hạng mục giải Osella cho Thành tựu về kỹ thuật.
+                            </li>
+                            <li>
+                                Giải thưởng Xuất sắc - Bộ phận hoạt hình (Lễ hội nghệ thuật truyền thống Nhật Bản 2005).
+                            </li>
+                            <li>
+                                Giải hoạt hình của năm, Đạo diễn xuất sắc nhất, Diễn viên lồng tiếng xuất sắc nhất, Âm nhạc hay nhất (Giải thưởng Anime Tokyo 2005).
+                            </li>
+                            <li>
+                                Phim hoạt hình hay nhất (Hội phê bình phim New York 2006).
+                            </li>
+                            <li>
+                                Được đề cử trong hạng mục Phim hoạt hình hay nhất tại lễ trao giải Oscar lần thứ 78.
+                            </li>
+                            <li>
+                                Bốn giải Tokyo Anime.
+                            </li>
+                            <li>
+                                Giải Nebula cho Kịch bản xuất sắc nhất.
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+            </section>
+            <hr class="bottom-line" id="6">
+            <!--Tổng kết và Góc bình luận-->
+            <div class="tongketbinhluan">
+                <div class="tongket">
+                    <h2>
+                        Tổng kết
+                    </h2>
+                    <p class="tongket-content">
+                        Chỉ vỏn vẹn trong vòng 120 phút với những thước phim đẹp, được đầu tư kỹ lưỡng, cùng các tình tiết nhẹ nhàng đầy nhân văn, Howl's Moving Castle đã đem đến cho người xem những trải nghiệm vô cùng tuyệt vời, về giấc mộng của một lâu đài bay giữa đời thực, về hành trình tìm lại bản thân và về một chuyện tình đẹp nhưng cũng đầy thực tế. Qua đó, phim cũng truyền đi những thông điệp nhân văn về cuộc sống, về con người và về sự hi sinh cho những điều mà ta yêu thương.
+                    </p>
+                </div>
+                <div class="binhluan">
+                    <form action="baotuong.html">
+                        <h2>
+                            Góc bình luận
+                        </h2>
+                        <p><strong>Họ và tên</strong></p>
+                        <input type="text" id="name" class="input" placeholder="Nhập tên của bạn" required>
+                        <p><strong>Địa chỉ email</strong></p>
+                        <input type="email" id="email" class="input" placeholder="Nhập email của bạn" required>
+                        <p><strong>Bình luận</strong></p>
+                        <textarea id="comment" class="input" placeholder="Nhập bình luận của bạn" required></textarea>
+                        <button class="button" type="submit">Gửi bình luận</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <hr class="bottom-line">
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li><strong>Thành viên nhóm</strong>
+                        <ul style="list-style: none;">
+                            <li>Nguyễn Võ Thùy Duyên</li>
+                            <li>Trần Thảo An</li>
+                            <li>Mai Đức Gia Phúc</li>
+                            <li>Hoàng Xuân Anh Tuấn</li>
+                    </ul>
+                    </li>
+                    <li>
+                        <span><strong>Email:</strong></span> duyennvt.l.2225@gmail.com
+                    </li>
+                    <li>
+                        <span><strong>Lần cập nhật cuối:</strong></span> 27/2/2025.
+                    </li>
+                    <li>
+                        <strong>Nội dung được tham khảo từ:</strong>
+                        <ul style="list-style: none;">
+                            <li>
+                                <a 
+                                class="source"
+                                href="https://vi.wikipedia.org/wiki/L%C3%A2u_%C4%91%C3%A0i_bay_c%E1%BB%A7a_ph%C3%A1p_s%C6%B0_Howl_(phim)" 
+                                target="_blank">
+                                    Wikipedia
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                class="source"
+                                href="https://spiderum.com/bai-dang/Howls-Moving-Castle-Ban-da-tim-thay-ban-than-minh-chua-5QKzkBHKgBn0" 
+                                target="_blank">
+                                    Spiderum
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                class="source"
+                                href="https://hoahoctro.tienphong.vn/howls-moving-castle-nhung-thong-diep-van-ven-nguyen-ve-dep-sau-20-nam-post1707875.tpo?utm_source=chatgpt.com" 
+                                target="_blank">
+                                    Báo Tiền Phong
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
